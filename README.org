@@ -8,6 +8,7 @@ As such, using these technologies to build interactive visualizations is super v
 * Links
 [[https://rustwasm.github.io/docs/book/game-of-life/setup.html][For this repository, I'm using the Rust WASM book]] as a jumping-off point.
 [[https://medium.com/@alexc73/programming-using-web-assembly-c4c73a4e09a9][This Medium article]] features graphics coding in WAT - basically WASM code! Definitely something to learn from.
+[[https://wasmbyexample.dev/examples/reading-and-writing-graphics/reading-and-writing-graphics.rust.en-us.html][Here's a WASM graphics tutorial]], [[http://cliffle.com/blog/bare-metal-wasm/][as is this]].
 * Notes
 ** Design
 The Best WASM javascript design is one where data structures live in rust types and wasm linear memory, then are exposed to javascript via simple functions and interfaces. All of these heavy computations should be contained in WASM - otherwise, our data transformations on the browser side receive overwhelmingly expensive computation.
