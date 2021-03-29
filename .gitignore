@@ -2,3 +2,4 @@
 !.direnv/.git-keep
 
 target
+www/node_modules
