@@ -1,10 +1,13 @@
 #+TITLE: WebAssembly Experiments
 
-As a masochist, I want to write web applications in systems languages
+I focus primarily on web development - it's the only way to get everyone to be able to see my code! - but I think learning systems languages like Rust and Zig is very interesting and very valuable
 
-[Using the Rust WASM book](https://rustwasm.github.io/docs/book/game-of-life/setup.html) as a jumping-off point.
+As such, using these technologies to build interactive visualizations is super valuable - and lets me do things like create graphics visualizations that aren't as performance intensive as their JavaScript-only equivalents is incredibly valuable.
 
 
+* Links
+[[https://rustwasm.github.io/docs/book/game-of-life/setup.html][For this repository, I'm using the Rust WASM book]] as a jumping-off point.
+[[https://medium.com/@alexc73/programming-using-web-assembly-c4c73a4e09a9][This Medium article]] features graphics coding in WAT - basically WASM code! Definitely something to learn from.
 * Notes
 ** Design
 The Best WASM javascript design is one where data structures live in rust types and wasm linear memory, then are exposed to javascript via simple functions and interfaces. All of these heavy computations should be contained in WASM - otherwise, our data transformations on the browser side receive overwhelmingly expensive computation.
