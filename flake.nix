@@ -14,8 +14,7 @@
     pkgs = import nixpkgs { inherit system; overlays = [ rust_overlay.overlay ]; };
     lib = nixpkgs.lib;
     rust_channel = pkgs.rust-bin.fromRustupToolchainFile ./rust-toolchain;
-    package = with pkgs; callPackage ./. { inherit pkgs; };
-  in { defaultPackage = package; 
+  in {
   devShell = pkgs.mkShell {
     nativeBuildInputs = with pkgs; [
       rust_channel # Full rust from overlay, includes cargo
