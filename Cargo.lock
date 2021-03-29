@@ -90,9 +90,9 @@ checksum = "ea6a9290e3c9cf0f18145ef7ffa62d68ee0bf5fcd651017e586dc7fd5da448c2"
 
 [[package]]
 name = "syn"
-version = "1.0.66"
+version = "1.0.65"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3c193d6a9455d05405156b3a4cc04bd20b9ca1745bf6198e1258418f852b967b"
+checksum = "f3a1d708c221c5a612956ef9f75b37e454e88d1f7b899fbd3a18d4252012d663"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -199,6 +199,8 @@ dependencies = [
 name = "wasm-game-of-life"
 version = "0.1.0"
 dependencies = [
+ "js-sys",
+ "syn",
  "wasm-bindgen",
  "wasm-bindgen-test",
  "wee_alloc",
