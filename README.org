@@ -3,3 +3,12 @@
 As a masochist, I want to write web applications in systems languages
 
 [Using the Rust WASM book](https://rustwasm.github.io/docs/book/game-of-life/setup.html) as a jumping-off point.
+
+
+* Notes
+** Design
+The Best WASM javascript design is one where data structures live in rust types and wasm linear memory, then are exposed to javascript via simple functions and interfaces. All of these heavy computations should be contained in WASM - otherwise, our data transformations on the browser side receive overwhelmingly expensive computation.
+
+We want to optimize for minimizing:
+- Copying in and out of WASM memory - more copies is more overhead!
+- Serializing and deserializing - we want the data we past to JS to be JS readable!
