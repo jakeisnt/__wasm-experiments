@@ -1,5 +1,5 @@
 {
-  description = "TODO";
+  description = "wasm-experiments";
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
